@@ -1,0 +1,127 @@
+.footer {
+  .widget h5 {
+    margin-bottom: 20px;
+    font-size: 18.2px;
+    line-height: 25.48px;
+  }
+
+  a {
+    color: $color-secondary;
+  }
+}
+
+.footer-big {
+  color: $color-body-text;
+  padding: 30px 0 18px;
+  text-align: center;
+
+  ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    
+    li {
+      a {
+        display: inline-block;
+        position: relative;
+        padding: 5px 0;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .btn {
+        margin: 0;
+      }
+    }
+  }
+  
+  p {
+    color: $color-body-text;
+  }
+
+  .footer-menu li {
+    display: inline-block;
+    a {
+      padding: 15px;
+    }
+  }
+  .copyright {
+    padding: 15px 0;
+  }
+
+  .content {
+    text-align: left;
+  }
+
+  hr {
+    margin-top: 10px;
+  }
+}
+
+.footer-black {
+  background: #323437;
+
+  a {
+    opacity: 0.86;
+    color: #fff;
+    &:hover, &:focus {
+      opacity: 1;
+    }
+  }
+  h5, h4, i, .copyright {
+    color: #fff;
+  }
+  hr {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.hestia-bottom-footer-content{
+  position: relative;
+}
+
+.hestia-center{
+  width: 100%;
+  text-align: center;
+}
+
+.footer-big .footer-menu li a[href*="mailto:"],
+.footer-big .footer-menu li a[href*="tel:"] {
+  color: transparent;
+  font-size: 0;
+  padding: 10px;
+
+  &:before {
+    color: #fff;
+    font-family: 'FontAwesome';
+    font-size: 16px;
+  }
+
+  &:hover:before {
+    color: #999;
+  }
+}
+
+.footer-big .footer-menu li a[href*="mailto:"]{
+  &:before {
+    content: '\f0e0';
+  }
+}
+
+.footer-big .footer-menu li a[href*="tel:"]{
+  &:before {
+    content: '\f095';
+  }
+}
+
+// Generate for each social network specific buttons code
+@each $current-social in $social-networks {
+  $i: index($social-networks, $current-social);
+  @include footer-menu-social-icons($current-social,nth($social-networks-colors,$i), nth($social-networks-icons,$i));
+}

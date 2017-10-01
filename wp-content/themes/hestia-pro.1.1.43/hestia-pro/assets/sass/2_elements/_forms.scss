@@ -1,0 +1,389 @@
+legend {
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+
+output {
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.radio label,
+.checkbox label {
+  min-height: 20px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.label {
+  background-color: #fff;
+  border-radius: 2px;
+
+  &.label-default {
+    background-color: #fff;
+  }
+
+  &.label-primary {
+    background-color: $color-primary;
+  }
+
+  &.label-success {
+    background-color: $color-success;
+  }
+
+  &.label-danger {
+    background-color: $color-danger;
+  }
+
+  &.label-rose {
+    background-color: $color-rose;
+  }
+}
+
+.form-control,
+.form-group .form-control,
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+  @extend %forms-inputs-styling;
+}
+
+.form-control {
+  height: 36px;
+  padding: 7px 0;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.form-control-static {
+  min-height: 34px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.form-control,
+.form-group .form-control {
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-webkit-input-placeholder {
+    color: #aaa;
+    font-weight: 400;
+  }
+}
+
+.form-control[readonly],
+.form-control[disabled],
+fieldset[disabled] .form-control,
+.form-group .form-control[readonly],
+.form-group .form-control[disabled],
+fieldset[disabled] .form-group .form-control {
+  background-color: transparent;
+}
+
+.form-control[disabled],
+fieldset[disabled] .form-control,
+.form-group .form-control[disabled],
+fieldset[disabled] .form-group .form-control {
+  border-bottom: 1px dotted #d2d2d2;
+  background-image: none;
+}
+
+.form-control {
+  margin-bottom: 7px;
+}
+
+.form-control::-moz-placeholder,
+.form-control:-ms-input-placeholder,
+.form-control::-webkit-input-placeholder,
+.checkbox label,
+.radio label,
+label {
+  &, .form-group & {
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+  }
+}
+
+label.control-label {
+  margin: 16px 0 0;
+  color: #aaa;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.07143;
+}
+
+.help-block {
+  margin-top: 0;
+  font-size: 11px;
+}
+
+.form-group {
+  padding-bottom: 7px;
+  position: relative;
+
+  .form-control {
+    margin-bottom: 7px;
+  }
+
+  label.control-label {
+    margin: 16px 0 0;
+    color: #aaa;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.07143;
+  }
+
+  input[type=file] {
+    position: relative;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  textarea ~ .form-control-highlight {
+    margin-top: -11px;
+  }
+
+  .help-block {
+    margin-top: 0;
+    font-size: 11px;
+    display: none;
+    position: absolute;
+  }
+
+  &.label-static label.control-label,
+  &.label-placeholder label.control-label,
+  &.label-floating label.control-label {
+    @extend %transition-all-3s-ease;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &.label-floating label.control-label {
+    will-change: left,top,contents;
+  }
+
+  &.label-placeholder:not(.is-empty) label.control-label {
+    display: none;
+  }
+
+  &.label-floating label.control-label,
+  &.label-placeholder label.control-label {
+    top: -7px;
+    font-size: 14px;
+    line-height: 1.42857;
+  }
+
+  &.label-static label.control-label,
+  &.label-floating.is-focused label.control-label,
+  &.label-floating:not(.is-empty) label.control-label {
+    top: -28px;
+    left: 0;
+    font-size: 11px;
+    line-height: 1.07143;
+  }
+
+  &.is-focused .form-control {
+    @extend %forms-inputs-styling-on-focus;
+  }
+
+  &.is-focused .form-control .material-input:after {
+    background-color: $color-primary;
+  }
+
+  &.is-focused.label-placeholder label,
+  &.is-focused.label-placeholder label.control-label {
+    color: #aaa;
+  }
+
+  &.is-focused select.form-control {
+    @extend %forms-box-shadow-none;
+    border-color: #d2d2d2;
+  }
+
+  &.has-warning .form-control {
+    @extend %forms-box-shadow-none;
+  }
+
+  &.has-warning.is-focused .form-control {
+    @include forms-background-gradient($color-warning);
+  }
+
+  &.has-warning label.control-label {
+    color: $color-warning;
+  }
+
+  &.has-error .form-control {
+    @extend %forms-box-shadow-none;
+  }
+
+  &.has-error.is-focused .form-control {
+    @include forms-background-gradient($color-danger);
+  }
+
+  &.has-error label.control-label {
+    color: $color-danger;
+  }
+
+  &.has-success .form-control {
+    @extend %forms-box-shadow-none;
+  }
+
+  &.has-success.is-focused .form-control {
+    @include forms-background-gradient($color-success);
+  }
+
+  &.has-success label.control-label {
+    color: $color-success;
+  }
+
+  &.has-info .form-control {
+    @extend %forms-box-shadow-none;
+  }
+
+  &.has-info.is-focused .form-control {
+    @include forms-background-gradient($color-info);
+  }
+
+  &.has-info label.control-label,
+  &.has-info .help-block {
+    color: $color-info;
+  }
+}
+
+select {
+  &.form-control {
+    @extend %forms-box-shadow-none;
+    border: 0;
+    border-radius: 0;
+  }
+
+  &.form-control[multiple],
+  .form-group.is-focused select.form-control[multiple] {
+    height: 85px;
+  }
+}
+
+.input-group-btn .btn {
+  margin: 0 0 7px;
+}
+
+.input-group {
+  .input-group-btn {
+    padding: 0 12px;
+  }
+
+  .input-group-addon {
+    padding: 6px 15px 0;
+    border: 0;
+    background: transparent;
+  }
+}
+
+.form-control-feedback {
+  opacity: 0;
+
+  .has-success & {
+    opacity: 1;
+    color: $color-success;
+  }
+
+  .has-error & {
+    opacity: 1;
+    color: $color-danger;
+  }
+}
+
+// Search input icon
+
+.searchform,
+.search-form {
+  label {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 25px;
+    width: 100%;
+  }
+}
+
+.searchform,
+.search-form,
+.woocommerce-product-search {
+  display: table;
+  position: relative;
+
+  input[type=submit] {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    text-indent: -9999px;
+    top: -19px;
+    width: 45px;
+  }
+
+  input[type=search] {
+    height: 36px;
+  }
+
+  &:after {
+    color: #fff;
+    content: "\f002";
+    font-family: 'Fontawesome';
+    font-size: 18px;
+    pointer-events: none;
+    position: absolute;
+    right: 15px;
+    top: 4px;
+  }
+}
+
+// Placeholder for inputs compatibility
+%forms-inputs-styling {
+  @include forms-background-gradient($color-primary);
+  @extend %forms-box-shadow-none;
+  float: none;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center bottom, center -webkit-calc(100% - 1px);
+  background-position: center bottom, center calc(100% - 1px);
+  background-size: 0 2px, 100% 1px;
+  font-weight: 400;
+  -webkit-transition: background 0s ease-out;
+  transition: background 0s ease-out;
+}
+
+// Placeholder for inputs compatibility on focus
+%forms-inputs-styling-on-focus {
+  @include forms-background-gradient($color-primary);
+  @extend %forms-box-shadow-none;
+  outline: none;
+  background-size: 100% 2px,100% 1px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+// Placeholder for removing box shadow on forms
+%forms-box-shadow-none {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}

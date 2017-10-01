@@ -1,0 +1,88 @@
+/*--------------------------------------------------------------
+## Send in Blue
+--------------------------------------------------------------*/
+form.form-group[id^=sib] {
+  input[type=text],
+  input[type=email],
+  select {
+    border: none !important;
+  }
+}
+
+/*--------------------------------------------------------------
+## WPML
+--------------------------------------------------------------*/
+footer .wpml-ls-item-legacy-dropdown a,
+footer .wpml-ls-item-legacy-dropdown-click a{
+  color: #000000;
+}
+
+.wpml-ls-statics-footer{
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+## BBPress Basic
+--------------------------------------------------------------*/
+.bbp-template-notice.info {
+  max-width: inherit;
+}
+#bbpress-forums p.bbp-topic-meta img.avatar, #bbpress-forums ul.bbp-reply-revision-log img.avatar, #bbpress-forums ul.bbp-topic-revision-log img.avatar, #bbpress-forums div.bbp-template-notice img.avatar, #bbpress-forums .widget_display_topics img.avatar, #bbpress-forums .widget_display_replies img.avatar {
+  margin-bottom: 0;
+}
+
+.bbpress.blog-post .section-text p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+#wp-link-close {
+  box-shadow: none
+}
+
+/*--------------------------------------------------------------
+## Elementor / Beaver Builder Section Editing
+--------------------------------------------------------------*/
+.elementor-editor-active .main,
+.fl-builder-edit .main {
+  >section {
+    position: relative;
+    .hestia-pagebuilder-frontpage-controls {
+      position: absolute;
+      top: 20px;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      border: 2px solid #76cfe8;
+      text-align: center;
+      display: none;
+      z-index: 100;
+      > a {
+        cursor: pointer;
+        position: relative;
+        background: #71d7f7;
+        border-radius: 3px 3px 0 0;
+        top: -30px;
+        line-height: 30px;
+        min-width: 30px;
+        text-align: center;
+        color: #fff;
+        font-weight: 800;
+        padding: 0 10px;
+        display: inline-block;
+        &:hover {
+          color: #f00;
+        }
+        > .dashicons {
+          height: 30px;
+          width: auto;
+          margin-right: 5px;
+          line-height: 27px;
+        }
+      }
+    }
+    &:hover .hestia-pagebuilder-frontpage-controls {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@media (max-width: 1199px) {
+  .hestia-features .row,
+  .hestia-about .row,
+  .products .row,
+  .hestia-work .row,
+  .hestia-team .row,
+  .pricing .row,
+  .hestia-testimonials .row,
+  section.hestia-blogs .row,
+  .contactus .row {
+    padding: 0 50px;
+  }
+
+  .carousel h1.hestia-title,
+  .carousel h2.title {
+    font-size: 58.8px;
+    line-height: 67.62px;
+  }
+
+  .navbar .navbar-brand {
+    padding: 0 15px;
+  }
+
+  .navbar .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}

@@ -1,0 +1,41 @@
+.hestia-about {
+  background-attachment: fixed;
+  color: $color-body-text;
+  font-weight: 300;
+  h1, h2, h3, h4, h5 {
+    color: $color-secondary;
+    text-decoration: none;
+    word-wrap: break-word;
+    font-family: $secondary-font;
+    font-weight: 700;
+  }
+  &.section-image {
+    color: #fefefe;
+    h1, h2, h3, h4, h5 {
+      color: #fff;
+    }
+    h6 {
+      color: rgba(255, 255, 255, 0.76);
+    }
+  }
+  p {
+    font-size: 17.5px;
+    line-height: 27.125px;
+  }
+  .customizer-hidden {
+    display: none;
+  }
+}
+
+.products .shop-item {
+  margin-top: 30px;
+  .added_to_cart {
+    font-size: 10px;
+  }
+}
+
+.is-ios {
+  .hestia-about {
+    background-attachment: scroll;
+  }
+}

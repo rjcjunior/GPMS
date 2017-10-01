@@ -1,0 +1,279 @@
+@media (max-width: 991px) {
+  .navbar .navbar-nav > li {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .page-header {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .card.card-raised .card-image {
+    margin-top: -30px;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card.card-raised {
+    padding: 20px;
+  }
+
+  .woocommerce-checkout .page-header {
+    height: auto;
+  }
+
+  .hestia-about .text-area {
+    margin: 0 0 10px;
+  }
+
+  .blog .page-header.header-small h2 {
+    margin: 0;
+  }
+
+  .blog .page-header.header-small .container {
+    padding: 200px 15px;
+  }
+
+  .blog .page-header.header-small {
+    height: auto;
+    min-height: 0;
+  }
+
+  .page-header .iframe-container {
+    padding: 30px 0;
+  }
+
+  .card-form-horizontal .form-group {
+    padding-bottom: 20px;
+  }
+
+  .carousel .page-header {
+    padding: 0 30px;
+  }
+
+  .carousel .buttons {
+    margin-bottom: 100px;
+  }
+
+  .btn.btn-simple {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: left;
+  }
+  .hestia-work .col-md-6 .card-background .content,
+  .hestia-work .col-md-4 .card-background .content {
+    padding-top: 15%;
+  }
+  .alternative-blog-row {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    table-layout: fixed;
+  }
+  .alternative-blog-row div:first-child {
+    display: table-footer-group;
+  }
+  .alternative-blog-row div:last-child {
+    display: table-header-group;
+  }
+  .hestia-features .row,
+  .features .row,
+  .hestia-about .row,
+  .about .row,
+  .products .row,
+  .hestia-work .row,
+  .work .row,
+  .hestia-team .row,
+  .team .row,
+  .pricing .row,
+  .hestia-testimonials .row,
+  .testimonials .row,
+  section.blogs .row,
+  .contactus .row {
+    padding: 0 25px;
+  }
+
+  .contactus .contact_submit_wrap {
+    text-align: center;
+  }
+
+  .single aside.blog-sidebar {
+    padding: 40px 30px;
+  }
+
+  .shop-sidebar.card {
+    width: 96%;
+    text-align: initial;
+  }
+
+  .shop-sidebar-wrapper {
+    text-align: center;
+  }
+
+  // Blog
+  .blog {
+    .hestia-blogs {
+      padding-top: 30px;
+
+      .card-blog {
+        .card-image {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    #authors-on-blog {
+     padding-bottom: 40px;
+    }
+  }
+
+  // Single post
+  .single {
+    &.single-post {
+      .section-blog-info {
+        .card-profile {
+          .card-title,
+          .description {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  // Sidebar
+  .hestia-sidebar-open,
+  .hestia-sidebar-close {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 12px 15px;
+  }
+
+  .row-sidebar-toggle {
+    margin: 0 15px;
+    text-align: right;
+  }
+
+  .blog-sidebar-wrapper,
+  .shop-sidebar-wrapper {
+    float: none;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    background: #fff;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+    .row-sidebar-toggle {
+      margin-bottom: 30px;
+    }
+  }
+
+  .blog-sidebar-wrapper {
+    .blog-sidebar {
+      margin: 0 15px;
+    }
+  }
+
+  .archive.woocommerce {
+    .hestia-sidebar-open {
+      margin-bottom: 30px;
+    }
+  }
+
+  // Top bar
+  .hestia-top-bar {
+    .container {
+      width: 100%;
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .blog-posts-wrap > article  {
+      padding: 20px;
+  }
+
+  .card.card-raised .card-image {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .navbar .navbar-center {
+    display: inline-block;
+    float: none;
+  }
+
+  .navbar .navbar-nav > li{
+    margin: 0;
+  }
+
+  .navbar .navbar-nav > li.btn {
+    margin: 0 10px;
+  }
+
+  .navbar .navbar-nav > li.btn:last-child {
+    margin-right: 0;
+  }
+
+  .gallery .gallery-item {
+    padding: 5px;
+  }
+
+  .gallery img {
+    border: none !important;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  .entry-social {
+    text-align: right;
+  }
+
+  .footer {
+    .content {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    .row {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    .col-md-4 {
+      padding: 0 30px;
+    }
+  }
+
+  // Sidebar
+  .blog-sidebar-wrapper,
+  .shop-sidebar-wrapper {
+    float: left;
+    overflow: none;
+    position: static;
+    padding: 0;
+    background: transparent;
+    left: 0 !important;
+  }
+}

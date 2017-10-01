@@ -1,0 +1,77 @@
+.contactus {
+  .content .row {
+    padding: 0;
+  }
+
+  .form-group {
+    margin: 0;
+  }
+
+  .pirate_forms_wrap .form_field_wrap {
+    line-height: 0;
+  }
+
+  .card .content {
+    padding: 15px;
+  }
+
+  .pirate_forms_wrap {
+    float: none;
+
+    .btn {
+      margin: 10px 0 15px;
+    }
+  }
+
+  .contact_message_wrap {
+    margin-bottom: 0;
+  }
+
+  .contact_submit_wrap {
+    text-align: right;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .hestia-info,
+  .info {
+    margin: 0;
+    padding: 0;
+
+    &,
+    p,
+    a:not(.btn) {
+      color: #ccc;
+    }
+
+    a:not(.btn):hover {
+      text-decoration: underline;
+    }
+
+    &:first-child {
+      margin-top: 30px;
+    }
+
+    .info-title {
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    .icon {
+      margin-top: 14px;
+      color: #fff;
+    }
+  }
+
+  h5.description {
+    color: #ccc;
+  }
+
+  .card-contact {
+    margin-top: 30px;
+  }
+}
+
+.contact_submit_wrap {
+  text-align: left;
+}

@@ -1,0 +1,19 @@
+.hestia-team, .team {
+  .card {
+    text-align: left;
+
+    .footer {
+      margin-top: 0;
+    }
+  }
+
+  h5.description {
+    margin-bottom: 70px;
+  }
+}
+
+// Generate for each social network specific buttons code
+@each $current-social in $social-networks {
+  $i: index($social-networks, $current-social);
+  @include footer-buttons-social-icon($current-social,nth($social-networks-colors,$i));
+}

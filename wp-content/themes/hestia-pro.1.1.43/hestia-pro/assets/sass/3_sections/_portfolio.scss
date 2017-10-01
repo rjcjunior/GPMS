@@ -1,0 +1,45 @@
+.hestia-work {
+  .portfolio-item {
+    margin-top: 30px;
+  }
+  .card-background .content {
+    padding-bottom: 50px;
+    opacity: 0;
+  }
+  .col-md-4 .card-background .content {
+    padding-top: 30%;
+  }
+  .col-md-6 .card-background .content {
+    padding-top: 20%;
+  }
+  .card-background {
+    &:hover .content {
+      opacity: 1;
+      -webkit-transition: all ease 0.5s;
+      transition: all ease 0.5s;
+    }
+    .card-title {
+      font-size: 20px;
+    }
+  }
+  .portfolio-item {
+    &:nth-child(6n) .label {
+      background-color: $color-success;
+    }
+    &:nth-child(6n+1) .label {
+      background-color: $color-primary-hover;
+    }
+    &:nth-child(6n+2) .label {
+      background-color: $color-info;
+    }
+    &:nth-child(6n+3) .label {
+      background-color: $color-danger;
+    }
+    &:nth-child(6n+4) .label {
+      background-color: $color-warning;
+    }
+    &:nth-child(6n+5) .label {
+      background-color: $color-rose;
+    }
+  }
+}

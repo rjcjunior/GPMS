@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+  > {
+    thead > tr > th {
+      font-size: 21px;
+      font-weight: 300;
+      padding: 12px 8px;
+      vertical-align: middle;
+    }
+    tbody > tr > th,
+    tfoot > tr > th,
+    thead > tr > td,
+    tbody > tr > td,
+    tfoot > tr > td {
+      padding: 12px 8px;
+      vertical-align: middle;
+    }
+    tbody > tr {
+      position: relative;
+      border-bottom: 1px solid #eee;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}

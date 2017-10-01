@@ -1,0 +1,36 @@
+.carousel {
+  .page-header {
+    z-index: -2;
+  }
+
+  .carousel-control {
+    &.left, &.right {
+      z-index: 99;
+      background-image: none;
+    }
+  }
+  .item {
+    text-align: center;
+  }
+  .carousel-control {
+    text-shadow: none;
+    &.left {
+      /*rtl:ignore*/
+      right: auto;
+      /*rtl:ignore*/
+      left: 0;
+    }
+    &.right {
+      /*rtl:ignore*/
+      right: 0;
+    }
+    .fa {
+      display: inline-block;
+      position: absolute;
+      z-index: 5;
+      top: 50%;
+      bottom: 15px;
+      font-size: 50px;
+    }
+  }
+}
